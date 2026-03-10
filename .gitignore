@@ -1,0 +1,10 @@
+/target
+Cargo.lock
+.env
+*.swp
+*.swo
+*~
+.DS_Store
+*.exe
+generate_report.py
+*.pdf
