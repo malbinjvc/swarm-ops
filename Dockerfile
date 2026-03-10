@@ -1,6 +1,6 @@
 # ── Builder stage ─────────────────────────────────────────────────
 FROM rust:1.83-alpine AS builder
-RUN apk add --no-cache musl-tools
+RUN apk add --no-cache musl-dev
 WORKDIR /app
 COPY Cargo.toml Cargo.lock* ./
 COPY src/ src/
