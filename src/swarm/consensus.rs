@@ -29,7 +29,7 @@ impl ConsensusEngine {
 
         let mut merged: Vec<Finding> = Vec::new();
 
-        for (_category, group) in &groups {
+        for group in groups.values() {
             let mut used = vec![false; group.len()];
 
             for i in 0..group.len() {
